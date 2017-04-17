@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>grey.png</file>
+        <file>peleMele.png</file>
+        <file>save.png</file>
+        <file>upload.png</file>
+        <file>print.png</file>
+    </qresource>
+</RCC>

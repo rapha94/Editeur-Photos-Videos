@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>433</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>fichier</string>
+    </property>
+    <addaction name="actionGray"/>
+    <addaction name="actionPele_mele"/>
+    <addaction name="actionOuvrir"/>
+   </widget>
+   <addaction name="menuFichier"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOuvrir"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionGray"/>
+   <addaction name="actionPele_mele"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="ressource.qrc">
+     <normaloff>:/new/prefix1/save.png</normaloff>:/new/prefix1/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionGray">
+   <property name="icon">
+    <iconset resource="ressource.qrc">
+     <normaloff>:/new/prefix1/grey.png</normaloff>:/new/prefix1/grey.png</iconset>
+   </property>
+   <property name="text">
+    <string>gray</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionPele_mele">
+   <property name="icon">
+    <iconset resource="ressource.qrc">
+     <normaloff>:/new/prefix1/peleMele.png</normaloff>:/new/prefix1/peleMele.png</iconset>
+   </property>
+   <property name="text">
+    <string>pele mele</string>
+   </property>
+  </action>
+  <action name="actionOuvrir">
+   <property name="icon">
+    <iconset resource="ressource.qrc">
+     <normaloff>:/new/prefix1/upload.png</normaloff>:/new/prefix1/upload.png</iconset>
+   </property>
+   <property name="text">
+    <string>ouvrir</string>
+   </property>
+   <property name="shortcut">
+    <string>O</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ressource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
